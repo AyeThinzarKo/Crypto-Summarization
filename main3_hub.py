@@ -4,7 +4,7 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 
 # Loading the trained model and tokenizer (Fine-Tuned Model)
 model = BartForConditionalGeneration.from_pretrained('AyeThinzarKo/CryptoSummarization')
-tokenizer = BartTokenizer.from_pretrained('saved_crypto_model_3')
+tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
 
 #----------Home------------------
 
