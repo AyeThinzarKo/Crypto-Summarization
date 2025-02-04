@@ -6,11 +6,7 @@ import torch
 
 # Loading the trained model and tokenizer (Fine-Tuned Model)
 # model = BartForConditionalGeneration.from_pretrained('AyeThinzarKo/CryptoSummarization')
-model = BartForConditionalGeneration.from_pretrained(
-    "facebook/bart-large-cnn", 
-    torch_dtype=torch.float16,  # Use 16-bit precision
-    device_map="auto"           # Automatically allocate resources
-)
+model = BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn")
 tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
 
 #----------Home------------------
