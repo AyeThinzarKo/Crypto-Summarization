@@ -2,9 +2,8 @@ import streamlit as st
 # from transformers import BartForConditionalGeneration, BartTokenizer
 from transformers.models.bart import BartForConditionalGeneration, BartTokenizer
 
-import torch
-
 # Loading the trained model and tokenizer (Fine-Tuned Model)
+
 # model = BartForConditionalGeneration.from_pretrained('AyeThinzarKo/CryptoSummarization')
 model = BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn")
 tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
