@@ -1,5 +1,6 @@
 import streamlit as st
-from transformers import BartForConditionalGeneration, BartTokenizer
+# from transformers import BartForConditionalGeneration, BartTokenizer
+from transformers.models.bart import BartForConditionalGeneration, BartTokenizer
 
 
 # Loading the trained model and tokenizer (Fine-Tuned Model)
